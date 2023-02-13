@@ -50,5 +50,11 @@ export default class AudioEmbed extends Plugin {
 			});
 			return view;
 		});
+
+		// Add the "insertLink" button to the toolbar
+		this.editor.ui.componentFactory.add('audioEmbed', () => {
+			const button = this.editor.ui.componentFactory.create('insertLink');
+			return button;
+		});
 	}
 }
