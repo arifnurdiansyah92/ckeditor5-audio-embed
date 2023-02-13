@@ -26,6 +26,7 @@
   ],
   "dependencies": {
     "@arifnurdiansyah92/ckeditor5-audio-embed": "file:",
+    "@ckeditor/ckeditor5-html-embed": "^36.0.1",
     "ckeditor5": ">=36.0.1"
   },
   "devDependencies": {

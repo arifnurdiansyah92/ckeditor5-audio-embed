@@ -22,8 +22,9 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
+import AudioEmbed from '@arifnurdiansyah92/ckeditor5-audio-embed/src/audioembed'
 
-import AudioEmbed from '../src/audioembed';
 
 /* global document, window */
 
@@ -31,6 +32,7 @@ ClassicEditor
 	.create( document.querySelector( '#editor' ), {
 		plugins: [
 			AudioEmbed,
+			HtmlEmbed,
 			Essentials,
 			Autoformat,
 			BlockQuote,
@@ -54,7 +56,7 @@ ClassicEditor
 			Base64UploadAdapter
 		],
 		toolbar: [
-			'audioEmbedButton',
+			'audioEmbed',
 			'|',
 			'heading',
 			'|',
@@ -92,6 +94,9 @@ ClassicEditor
 				'tableRow',
 				'mergeTableCells'
 			]
+		},
+		htmlEmbed: {
+			showPreviews: true
 		}
 	} )
 	.then( editor => {

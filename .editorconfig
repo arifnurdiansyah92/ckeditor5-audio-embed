@@ -1,7 +1,7 @@
 # Configurations to normalize the IDE behavior.
 # http://editorconfig.org/
 
-root = true
+root = false
 
 [*]
 indent_style = tab

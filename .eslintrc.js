@@ -4,7 +4,7 @@
 
 module.exports = {
 	extends: 'ckeditor5',
-	root: true,
+	root: false,
 	ignorePatterns: [
 		// Ignore the entire `build/` (the DLL build).
 		'build/**'
