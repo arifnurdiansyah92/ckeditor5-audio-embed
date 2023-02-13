@@ -1,0 +1,17 @@
+{
+	"plugins": [
+		{
+			"name": "Audio embed",
+			"className": "AudioEmbed",
+			"description": "Adds text to the editor.",
+			"path": "src/audioembed.js",
+			"uiComponents": [
+				{
+					"name": "audioEmbedButton",
+					"type": "Button",
+					"iconPath": "theme/icons/ckeditor.svg"
+				}
+			]
+		}
+	]
+}
